@@ -45,7 +45,7 @@ export const Signup = () => {
 
                 if(response.data.message === "User created successfully"){
                   localStorage.setItem("token", response.data.token);
-                  navigate("/signin")
+                  navigate("/")
                 }else{
                   alert("User already exists");
                   console.log(response.data.message);
