@@ -15,7 +15,7 @@ export const Users = () => {
       setError(null);
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/v1/user/bulk?filter=${filter}`
+          `https://paytmclone-7rof.onrender.com/api/v1/user/bulk?filter=${filter}`
         );
         setUsers(response.data.users || []);
       } catch (err) {
